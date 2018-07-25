@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Avenir", "Apple SD Gothic Neo", "Nanum Barun Gothic", "Helvetica,Arial", "Malgun Gothic", "맑은고딕", 돋움, Dotum, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.625rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  color: #606770;
+}
+
+.content {
+  max-width: 968px;
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.site-header p {
+  padding-top: .5rem;
+}
+
+.site-header > div {
+  padding-left: 1rem;
+}
+
+.site-header > img {
+  width: 120px;
+}
+
+.main {
+  color: #ffffff;
+  min-height: calc(100% - 120px - 2rem);
+  background-color: #000000;
+  position: relative;
+}
+
+.about {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, .15);
+  display: flex;
+  align-items: center;
+}
+
+.about p {
+  color: #ffffff;
+}
+
+.info {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.info h2 {
+  font-size: 1.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.go-to-slack {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  padding: .5rem 1rem;
+}
+
+.fb-page {
+  flex: none;
+  width: 340px;
+  height: 500px;
+}
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #98a7b3;
+}
+
+.site-footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.2rem;
+}
