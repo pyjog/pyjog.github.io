@@ -1,3 +1,5 @@
+/* index.html */
+
 * {
   box-sizing: border-box;
 }
@@ -47,7 +49,11 @@ p {
   padding-left: 1rem;
 }
 
-.site-header > img {
+.site-header a {
+  height: 120px;
+}
+
+.site-header img {
   width: 120px;
 }
 
@@ -158,4 +164,23 @@ p {
   display: inline-block;
   vertical-align: middle;
   height: 1.2rem;
+}
+
+/* projects.html */
+.projects {
+  width: 968px;
+  align-self: center;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    width: calc(100% - 20px);
+  }
+
+  iframe {
+    min-height: 175px;
+  }
 }

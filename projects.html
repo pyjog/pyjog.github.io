@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyJog</title>
+    <link rel="stylesheet" href="./static/css/main.css">
+    <script>
+      function resizeIframe(element) {
+        element.style.height = element.contentWindow.document.body.scrollHeight + 'px';
+      }
+      function resizeIframeAgain() {
+        var iframeElement = document.getElementsByTagName('iframe')[0];
+        resizeIframe(iframeElement);
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header content">
+      <a href="https://pyjog.github.io/">
+        <img src="./static/img/logo.png">
+      </a>
+      <div>
+        <h1>PyJog</h1>
+        <h2>Python + Jogging</h2>
+        <p>정기 꾸준 코딩 모임 파이조그 입니다.</p>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about content">        
+        <div class="projects">
+              <iframe
+                width="100%"
+                src="https://kodingwarrior.github.io/github-issue-iframe-widget/?owner=pyjog&repo=projects&limit=10&state=open"
+                onLoad='resizeIframe(this)'></iframe>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="content">
+          Copyright PyJog and Contributors All rights reserved.
+          <div class="footer-links">
+            <div class="fb-like" data-href="https://www.facebook.com/pyjog/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+            <a href="https://github.com/PyJog/">
+              <img src="./static/img/mark-github.svg">
+            </a>
+            <a href="https://fb.me/pyjog/">
+              <img src="./static/img/facebook.svg">
+            </a>
+          </div>
+        </div>
+      </footer>
+      <script>
+          var doc = document;
+          setTimeout(resizeIframeAgain, 2000);
+      </script>
+    </main>
+  </body>
+</html>
