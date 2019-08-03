@@ -94,14 +94,22 @@ p {
 .go-to-slack {
   color: #ffffff;
   text-decoration: none;
+  display: inline-block;
+
   border: 1px solid #ffffff;
   padding: .5rem 1rem;
+  margin: 0rem 1rem;
 }
 
 .fb-page {
   flex: none;
   width: 340px;
   height: 500px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -130,8 +138,13 @@ p {
     margin-right: auto;
   }
   
+  .buttons {
+    display: block;
+  }
+
   .button-wrapper {
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -175,8 +188,13 @@ p {
   margin-right: auto;
 }
 
+.projects p {
+  margin: 10px 0px;
+}
+
 @media screen and (max-width: 768px) {
   .projects {
+    display: block;
     width: calc(100% - 20px);
   }
 
