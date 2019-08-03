@@ -52,6 +52,7 @@ p {
 }
 
 .main {
+  display: flex;
   color: #ffffff;
   min-height: calc(100% - 120px - 2rem);
   background-color: #000000;
@@ -59,10 +60,15 @@ p {
 }
 
 .about {
+  width: 968px;
   padding: 2rem 0;
+  margin-bottom: 54px;
   border-top: 1px solid rgba(0, 0, 0, .15);
   display: flex;
   align-items: center;
+  align-self: center;
+
+  word-break: keep-all;
 }
 
 .about p {
@@ -90,6 +96,43 @@ p {
   flex: none;
   width: 340px;
   height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    width: 100%;
+    display: block;
+  }
+
+  .info {
+    width: 500px;
+    padding: 0px 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+  }
+
+  .info p {
+    line-height: 1.5rem;
+  }
+
+  .fb-page {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button-wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .info {
+    width: calc(100% - 40px);
+  }
 }
 
 .site-footer {
